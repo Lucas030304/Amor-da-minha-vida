@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body  {
+            box-sizing: border-box;
+            margin: 0;
+            background-color: #4a2460;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+        }
+        .nav {
+            background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/colorful-love-hearts-wallpaper-free-photo.jpg?w=2210&quality=70");
+       
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+        .p1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .p2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        #desativar {
+            height: 150px;
+            width: 200px;
+            color: white;
+            background-color: #4a2460;
+            font-size: 20px;
+            border: 3px solid black;
+        }
+        #ativar {
+           color: white;
+           background-color: #cb2a70;
+           height: 150px;
+           width: 200px;
+           margin-right: 10px;
+           font-size: 20px;
+           border: 3px solid black;
+        }
+
+        #passo3 {
+           color: white;
+           background-color: #4a2460;
+           height: 150px;
+           width: 200px;
+           margin-right: 10px;
+           font-size: 20px;
+           border: 3px solid black;
+        }
+
+        #passo4 {
+           color: white;
+           background-color: #cb2a70;
+           height: 150px;
+           width: 200px;
+           font-size: 20px;
+           border: 3px solid black;
+        }
+
+        #passo5 {
+           color: white;
+           background-color: #cb2a70;
+           height: 150px;
+           width: 200px;
+           font-size: 20px;
+           margin-right: 10px;
+           border: 3px solid black;
+        }
+
+        #passo6 {
+           color: white;
+           background-color: #4a2460;
+           height: 150px;
+           width: 200px;
+           font-size: 20px;
+           border: 3px solid black;
+        }
+
+        #passo7 {
+            margin-top: 10px;
+           color: white;
+           background-color: #dd0f0f;
+           height: 150px;
+           width: 420px;
+           font-size: 30px;
+           border: 3px solid black;
+        }
+        
+    </style>
+
+</head>
+<body>
+   <div class="container">
+    <div class="nav">
+    <h1>Jogo do amor</h1>
+    <h2><i class="fa-solid fa-heart" style="color: #ef0606;"></i> Vamos ver se você me conhece! <i class="fa-solid fa-heart" style="color: #ef0606;"></i></h2>
+    </div>
+    <h2 id="tempo">Respostas:</h2>
+    <h2><i class="fa-solid fa-heart" style="color: #ef0606;"></i> Qual é a minha comida preferida? <i class="fa-solid fa-heart" style="color: #ef0606;"></i></h2>
+   
+    <div class="p1">
+      <button onclick=ativarContagem() id="ativar">I love you</button>
+      <button onclick=ativarContagem2() id="desativar">Yo te amo</button>
+     </div>
+     <h2><i class="fa-solid fa-heart" style="color: #ef0606;"></i> Oque eu mais gosto em você? <i class="fa-solid fa-heart" style="color: #ef0606;"></i></h2>
+
+     <div class="p2">
+      <button onclick=ativarContagem3() id="passo3">Ndiyakuthanda</button>
+      <button onclick=ativarContagem4() id="passo4">Je t'aime</button>
+     </div>
+    <h2><i class="fa-solid fa-heart" style="color: #ef0606;"></i> Qual o maior desejo da minha vida? meu maior sonho! <i class="fa-solid fa-heart" style="color: #ef0606;"></i></h2>
+     <div class="p3">
+      <button onclick=ativarContagem5() id="passo5">愛してます</button>
+      <button onclick=ativarContagem6() id="passo6">ฉันรักคุณ</button>
+     </div>
+     
+     <div class="last-btn">
+        <button onclick=ativarContagem7() id="passo7">O quanto eu te amo?</button>
+     </div>
+
+     </div>
+     <script src="index.js" id="ano"> 
+
+    </script> 
+</body>
+</html>
+
+function ativarContagem() {
+  document.getElementById('tempo').innerHTML = "queijo??";
+  setTimeout(function (){ 
+    document.getElementById('tempo').innerHTML = "Não! Eu até gosto, mas...";
+  }, 2000)
+ }
+
+
+ function ativarContagem2() {
+  document.getElementById('tempo').innerHTML = "Com toda a certeza do mundo";
+  setTimeout(function (){ 
+    document.getElementById('tempo').innerHTML = "é você!!!!!!";
+  }, 2000)
+ }
+
+ function ativarContagem3() {
+  document.getElementById('tempo').innerHTML = "Bom, se eu tivesse que pensar..";
+  setTimeout(function (){ 
+    document.getElementById('tempo').innerHTML = "Olhos? boca? seu rosto? sua bunda perfeita?";
+  }, 2000)
+ }
+
+ function ativarContagem4() {
+  document.getElementById('tempo').innerHTML = "Você tem tantas qualidades.. mas eu diria";
+  setTimeout(function (){ 
+    document.getElementById('tempo').innerHTML = "tudo!!!! você é perfeita amor, não existe defeitos em você!!!";
+  }, 2000)
+ }
+
+ function ativarContagem5() {
+  document.getElementById('tempo').innerHTML = "Viajar pelo mundo todo?";
+  setTimeout(function (){ 
+    document.getElementById('tempo').innerHTML = "Ficar rico, milionario???";
+  }, 2000)
+ }
+
+ function ativarContagem6() {
+  document.getElementById('tempo').innerHTML = "Ser imortal ou o rei dos piratas? NÃO!!!!!!";
+  setTimeout(function (){ 
+    document.getElementById('tempo').innerHTML = "Meu maior sonho é viver uma vida incrivel com você, porquê você é o amor da minha vida! Eu me apaixonei por você desde a primeira vez que eu te vi, tudo fez sentido quando você aceitou o meu pedido de namoro, e tudo melhora com você por perto, mesmo tendo a pior das fases, você me cura. Eu te amo mais que tudo nesse mundo, meu maior sonho definitivamente é viver com você, ter uma familia, ter sua risada, seu carinho, seu amor (e sua bunda) por perto, pra sempre!";
+  }, 2000)
+ }
+
+ function ativarContagem7() {
+  document.getElementById('tempo').innerHTML = "Amor, eu te amo mais que tudo nessa vida, simples assim. Você é o meu amorzinho, minha pretinha e meu bebê, e eu vou estar aqui pra você pra sempre. te amo! te amo! te amo!!";
+  setTimeout(function (){ 
+    document.getElementById('tempo').innerHTML = "E.. me desculpa por não ter procurado ajuda mais cedo. Eu já estou cuidando disso, e nunca quis nem irei querer te machucar. fiquei com medo de perder e não quero sentir isso de novo. Quero que você saiba que todas essas coisas ruins que estão acontecendo são só uma fase, e que você nunca vai ser um fracasso, muito pelo contrário, você é a definição de sucesso. eu te amo demais amor, e te admiro muito, admiro a sua inteligencia, o seu esforço, a sua disciplina e o seu carinho e cuidado com oque faz. Incrivel não é suficiente pra descrever você, minha preta vai muito além dessa palavra, é outro patamar bebê! Te amo muito minha pretinha, estou com você pro que der e vier. Você é linda, gostosa, inteligente, canta que nem um anjo, rebolando se torna um e ainda me ama, eu realmente tenho muita sorte de ter você! Te amo amor!";
+  }, 7000)
+ }
